@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test1 - Static website</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body>
+    <header class="header">        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><span>Travel</span> Guide </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Packages
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Transport</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        <div class="bannerTitle text-center">
+            <h1><b>Travel</b><br> far enough, <br><b>you meet</b><br> yourself</h1>
+        </div>
+        <div class="enquiryBtn">
+            <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#enquiry">Enquiry</button>
+        </div>
+
+        <!-- Enquiry popup form -->
+        
+        <div class="modal fade" id="enquiry" tabindex="-1" aria-labelledby="enquiryLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                <h1 class="modal-title fs-5" id="popupHeader">Please share you details..</h1>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                          </div>
+                          
+                        <div class="form-group mt-3">
+                          <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" id="phonenumber" placeholder="Phone Number">
+                          </div>
+                        <div class="form-group mt-3 selectBox">
+                          <select class="form-control" id="preference">
+                            <option>Your preference </option>
+                            <option>Honeymoon Packages</option>
+                            <option>Kerala Packages</option>
+                            <option>North Indian Packages</option>
+                          </select>
+                          <div class="form-control icon-container">
+                            <i class="fa-solid fa-angle-down"></i>
+                          </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="number" class="form-control" id="members" placeholder="number of members">
+                          </div>
+                        <div class="form-group mt-3">
+                          <textarea class="form-control" id="message" rows="3" placeholder="Messages"></textarea>
+                        </div>
+                      </form>      
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn btn-purple">Submit</button>
+                </div>
+            </div>
+            </div>
+        </div>
+  
+    </header>
+    <main id="mainContent">
+        <!-- Honeymoon Packages -->
+        <section id="packages" class="p-5">
+            <div class="container">
+                <div class="sectiontitle text-center mb-3 text-uppercase">
+                    <h2>Honeymoon Packages</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 border p-3 text-center package__item">
+                        <img src="./images/package1.jpg" alt="Image1">
+                        <h5>Kerala Honeymoon Packages</h5>
+                        <span class="days">(04 Nights / 05days)</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus provident ab possimus minima!</p>
+                        <button class="btn btn-primary">Book Now</button>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 border p-3 text-center package__item">
+                        <img src="./images/package2.jpg" alt="Image2">
+                        <h5>Maldives Honeymoon Packages</h5>
+                        <span class="days">(04 Nights / 05days)</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus provident ab possimus minima!</p>
+                        <button class="btn btn-primary">Book Now</button>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 border p-3 text-center package__item">
+                        <img src="./images/package3.jpg" alt="Image3">
+                        <h5>Manali Honeymoon Packages</h5>
+                        <span class="days">(04 Nights / 05days)</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus provident ab possimus minima!</p>
+                        <button class="btn btn-primary">Book Now</button>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 border p-3 text-center package__item">
+                        <img src="./images/package4.jpg" alt="Image4">
+                        <h5>Goa Honeymoon Packages</h5>
+                        <span class="days">(04 Nights / 05days)</span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus provident ab possimus minima!</p>
+                        <button class="btn btn-primary">Book Now</button>
+                    </div>
+                </div>
+                <div class="m-3 text-center">
+                    <button class="btn btn-primary">More packages</button>
+                </div>
+            </div>
+        </section>
+        <!-- Special kerala festival tours -->
+        <section id="festivalTours" class="tinted-bg">
+            <div class="sectiontitle text-center mb-3 text-uppercase pt-3">
+                <h2>Special Kerala Festival Tours</h2>
+            </div>
+
+            <div id="carouselExampleCaptions" class="carousel slide mb-5">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/festival1.jpg" class="d-block w-100" alt="Festival 1">
+                    <div class="carousel-caption d-none d-md-flex">
+                      <h5>Kerala Boat Race</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/festival2.jpg" class="d-block w-100" alt="FEstival 2">
+                    <div class="carousel-caption d-none d-md-flex">
+                      <h5>Theyyam</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/festival3.jpg" class="d-block w-100" alt="Festival 3">
+                    <div class="carousel-caption d-none d-md-flex">
+                      <h5>Pooram</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/R83BlU5nnbs?si=wJVxRTEo5AR98dYB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3">
+                        <img src="./images/image-grid.jpg" alt="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- North Indian tours -->
+        <section id="northtours">
+            <div class="container">
+                <div class="sectiontitle text-center mb-3 text-uppercase pt-3">
+                    <h2>North Indian Tours</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 mb-3 northtours__item">
+                        <div class="border p-3">
+                            <img src="./images/ni1.jpg" alt="Image1">
+                        </div>
+                         
+                        <div class="hoverScreen text-center">
+                            <h3>Jaipur</h3>
+                            <p>Price : Rs.15000/-</p>
+                            <button class="btn btn-danger text-uppercase">Book Now</button>
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-6 col-lg-3 northtours__item mb-3">
+                        <div class="border p-3 northtours__item">
+                            <img src="./images/ni2.jpg" alt="Image2">
+                        </div>
+                        <div class="hoverScreen text-center">
+                            <h3>Mumbai</h3>
+                            <p>Price : Rs.20000/-</p>
+                            <button class="btn btn-danger text-uppercase">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 northtours__item mb-3">
+                        <div class="border p-3 northtours__item">
+                            <img src="./images/ni3.jpg" alt="Image3">
+                        </div>
+                        <div class="hoverScreen text-center">
+                            <h3>Udaipur</h3>
+                            <p>Price : Rs.20000/-</p>
+                            <button class="btn btn-danger text-uppercase">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 northtours__item mb-3">
+                        <div class="border p-3 northtours__item">
+                            <img src="./images/ni4.jpg" alt="Image4">
+                        </div>
+                        <div class="hoverScreen text-center">
+                            <h3>Jodhpur</h3>
+                            <p>Price : Rs.15000/-</p>
+                            <button class="btn btn-danger text-uppercase">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mb-3">
+                <div class="sectiontitle text-center mb-3 pt-3">
+                    <h2 class="text-uppercase">Our Premium Features</h2>
+                    <p>We will make your dreams come true</p>
+                </div>
+                <div class="features mb-3">
+                    <div class="features__item">
+                        <div class="border p-3 text-center tinted-bg">
+                            <img src="./images/features1.jpg" alt="Image1">
+                            <h6 class="mt-3 text-uppercase">Free bike ride</h6>
+                            <a href="">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="features__item">
+                        <div class="border p-3 text-center tinted-bg">
+                            <img src="./images/features2.jpg" alt="Image1">
+                            <h6 class="mt-3 text-uppercase">Campfire</h6>
+                            <a href="">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="features__item">
+                        <div class="border p-3 text-center tinted-bg">
+                            <img src="./images/features3.jpg" alt="Image1">
+                            <h6 class="mt-3 text-uppercase">24x7 support</h6>
+                            <a href="">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="features__item">
+                        <div class="border p-3 text-center tinted-bg">
+                            <img src="./images/features4.jpg" alt="Image1">
+                            <h6 class="mt-3 text-uppercase">Free bike ride</h6>
+                            <a href="">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Customer Review -->
+        <section id="customerReview" class="tinted-bg p-5">
+            <div class="container">
+                <div class="sectiontitle text-center mb-3">
+                    <i class="fa-regular fa-envelope-open"></i>
+                    <h2>Our customer's love</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm col-md-4 text-center mb-3">
+                        <img src="./images/review1.jpeg" alt="Image1">
+                        <div class="rating m-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h6>Michael & Jenny</h6>
+                        <q class="m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita officia facilis nulla accusamus.</q>
+                    </div>
+                    <div class="col-sm col-md-4 text-center mb-3">
+                        <img src="./images/review2.jpeg" alt="Image1">
+                        <div class="rating m-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h6>Richard & Anna</h6>
+                        <q class="m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita officia facilis nulla accusamus.</q>
+                    </div>
+                    <div class="col-sm col-md-4 text-center">
+                        <img src="./images/review3.jpeg" alt="Image1">
+                        <div class="rating m-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h6>Jeffry & Joan</h6>
+                        <q class="m-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita officia facilis nulla accusamus.</q>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-sm col-md-4 footerMenu mb-3">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li><a href="">Our Company</a></li>
+                        <li><a href="">Our Management</a></li>
+                        <li><a href="">Connections</a></li>
+                        <li><a href="">Annual Report</a></li>
+                        <li><a href="">Our Network</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm  col-md-4 footerMenu text-center mb-3">
+                    <h5>Social Media</h5>
+                    <div class="iconLinks">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm  col-md-4 text-center">
+                    <div class="footerImg">
+                        <img src="./images/footer-img.png" alt="Image">
+                    </div>
+                    <p><b>Explore the world</b></p>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                &copy; Travel Guilde 2022 | Developed by Aswin S
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* Common styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+img{
+    width:100%;
+    display: block;
+}
+.btn-purple {
+    background: #390050;
+    color: #ffffff;
+    margin: 0 auto;
+}
+.btn-purple:hover {
+    border: 1px solid #390050;
+    color: #390050;
+}
+.tinted-bg {
+    background: #f8f9fa;
+}
+/* Header */
+.header {
+    background: url('./images/banner.jpg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+.navbar-brand {
+    font-size: 12px;
+}
+.navbar-brand span{
+    font-size: 30px;
+    color: #ff8d00;
+}
+.bannerTitle h1 {
+    font-size: 60px;
+    font-family: "Cedarville Cursive", cursive;
+}
+.bannerTitle b {
+    font-family: "Open Sans", sans-serif;
+}
+.bannerTitle.text-center {
+    position: absolute;
+    right: 15%;
+    top: 30%;
+}
+.enquiryBtn {
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.modal-header, .modal-footer{
+    border: none;
+}
+.modal-title {
+    text-transform: uppercase;
+}
+.modal-body .form-control {
+    border: none;
+    border-radius: 0;
+    width: 50%;
+    margin: 0 auto;
+}
+.form-group {
+    border-bottom: 1px solid #d4d4d4;
+}
+.selectBox{
+    position:relative;
+}
+#preference {
+    appearance: none;
+}
+.selectBox .form-control.icon-container {
+    position: absolute;
+    background: transparent;
+    width: 50px;
+    height: 100%;
+    right: 23%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Honeymoon packages */
+#packages .package__item:hover {
+    -webkit-box-shadow: -4px 7px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 7px 5px 0px rgba(0,0,0,0.75);
+box-shadow: -4px 7px 5px 0px rgba(0,0,0,0.75);
+}
+#packages button:hover {
+    -webkit-box-shadow: -4px 7px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 7px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -4px 7px 5px 0px rgba(0,0,0,0.75);
+    border: none;
+    background: red;
+}
+.package__item p {
+    text-align: justify;
+    font-size: 14px;
+}
+.package__item h5 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.days{
+    font-size: 1rem;
+    color: red;
+    margin: 0.5rem 0;
+    display: block;
+}
+/* Festivals */
+.carousel-caption {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.carousel-caption  h5 {
+    font-size: 3rem;
+    color: blue;
+    text-shadow: -1px 1px 0px #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+}
+/* North indian tour packages */
+#northtours .sectiontitle p {
+    font-family: "Cedarville Cursive", cursive;
+    color: #ff8d00;
+}
+.northtours__item {
+    position: relative;
+}
+.hoverScreen {
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 221, 221, 0.8);
+    margin: 0 0.8rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.northtours__item:hover .hoverScreen  {
+    display: flex;
+}
+/* Features */
+.features {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.features__item > .border {
+    border-radius: 50px;
+}
+.features__item > .border > img {
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    margin: 0 auto;
+}
+.features__item > .border > a {
+    text-decoration: none;
+}
+/* Review */
+.sectiontitle i {
+    font-size: 30px;
+    color: #ff8d00;
+}
+.review q {
+    font-weight: 100;
+    font-size: 14px;
+}
+.rating i {
+    color: #198754;
+}
+/* Footer */
+footer {
+    background:#0f254e;
+    color: #ffffff;
+}
+.footerMenu h5 {
+    color: #ff8d00;
+    text-transform: uppercase;
+}
+.footerMenu a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footerMenu a:hover{
+    color: #ff8d00;
+}
+.footerMenu ul{
+    list-style: none;
+    padding: 0;
+}
+.footerMenu ul li {
+    margin:10px 0;
+}
+
+.iconLinks a {
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+.footerImg {
+    width: 200px;
+    margin: 0 auto;
+}
